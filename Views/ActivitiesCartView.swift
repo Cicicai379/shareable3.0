@@ -94,12 +94,13 @@ struct ActivitiesCartView: View {
 
 struct ShoppingFinalInfoView: View {
     @ObservedObject var ShoppingCartItemsData: ActivitiesCart
+    @State private var isShowingNewWindow = false // New state variable to control the new window
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 Button(action: {
-                    // Add button action code here
+                    isShowingNewWindow = true // Set the state variable to true when the button is clicked
                 }) {
                     Image(systemName: "plus")
                         .foregroundColor(.white)
@@ -111,6 +112,10 @@ struct ShoppingFinalInfoView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.top, 10)
                 .padding(.trailing, 10)
+                .sheet(isPresented: $isShowingNewWindow) {
+                    // Content of the new window goes here
+                    NewWindowView()
+                }
 
                 HStack {
                     VStack(alignment: .leading) {
