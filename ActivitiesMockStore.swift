@@ -11,105 +11,115 @@ import SwiftUI
 class ActivitiesMockStore {
     
     static let activities: [ActivitiesItem] = [
-        ActivitiesItem(id: 0, activityName: "SURFING", activityNameLabel: "Surfing", activityImage: "surfing", selectedActivity: false),
-        ActivitiesItem(id: 1, activityName: "SNOWBOARD", activityNameLabel: "Snowboarding", activityImage: "snowboarding", selectedActivity: false),
-        ActivitiesItem(id: 2, activityName: "HIKING", activityNameLabel: "Hiking", activityImage: "hiking", selectedActivity: false)
+        ActivitiesItem(id: 0, activityName: "CLOTHING", activityNameLabel: "Clothing", activityImage: "clothing", selectedActivity: false),
+        ActivitiesItem(id: 1, activityName: "Entertainment", activityNameLabel: "Toys", activityImage: "toys", selectedActivity: false),
+        ActivitiesItem(id: 2, activityName: "EDUCATION", activityNameLabel: "Educational", activityImage: "education", selectedActivity: false),
         
     ]
     
     static let activityData: [ActivitiesData] = [
         
         ActivitiesData(id: 0, activitiesPlaces:
-            [ActivitiesPlaces(id: 0, activityPlace: "Costa Rica", activityPlaceImage: "costarica", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Tamarindo", pointImage: "tamarindo", pointDescription: "Tamarindo is a town in the Guanacaste Province, on Costa Rica’s Pacific coast. It’s known for beaches with strong surf, like Playa Tamarindo and Playa Langosta. To the north, Playa Grande beach is a major nesting site for huge leatherback turtles, and forms part of Las Baulas National Marine Park"),
+            [ActivitiesPlaces(id: 0, activityPlace: "Shirts + Jackets", activityPlaceImage: "shirts", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Gap Shirt", pointImage: "GAP", pointDescription: "Shirt size: 13-14 \n Quality: Slightly Worn \n Brand: Gap \n Contact Number: xxxxxxxxxxx"),
                                                                                                                        
-            ActivitiesFamousPoints(id: 1, pointName: "Jaco", pointImage: "jaco", pointDescription: "Jacó is a town on the Pacific coast of Costa Rica, southwest of the capital city, San José. It's known for its surf beaches and nightlife, and as a gateway to national parks. Rocky, gray-sand Jacó Beach is west of town. Southeast, Hermosa Beach has big waves."),
+            ActivitiesFamousPoints(id: 1, pointName: "Nike Jacket", pointImage: "NIKE", pointDescription: "Jacket size: 15-16 \n Quality: Brand new \n Brand: Nike \n Contact Number: xxxxxxxxxxxxx"),
             
-            ActivitiesFamousPoints(id: 2, pointName: "Dominical", pointImage: "dominical", pointDescription: "Dominical is a beach-front town in Bahía Ballena de Osa District in the province of Puntarenas in Costa Rica, approximately 45 km south of Quepos. It is well known for large, year-round waves and is popular among surfers in Costa Rica. The town began as a small fishing village")
+            ActivitiesFamousPoints(id: 2, pointName: "Ralph Lauren Sweater", pointImage: "SWEATER", pointDescription: "Sweater size: 14-16 \n Quality: Very Worn \n Brand: Ralph Lauren \n Contact Number: xxxxxxxxxxxxx")
             ]),
              
-             ActivitiesPlaces(id: 1, activityPlace: "Bali", activityPlaceImage: "bali", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Kuta", pointImage: "kuta", pointDescription: "Kuta is a beach and resort area in the south of the island of Bali, Indonesia. One of Bali's first tourist developments, it's best known for its party-centric atmosphere and surfing in the Indian Ocean. Kuta's long, consistent waves make it a popular surf spot, particularly for beginners"),
+             ActivitiesPlaces(id: 1, activityPlace: "Pants", activityPlaceImage: "pants", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Jeans", pointImage: "JEANS", pointDescription: "Jean Size: 15-16 \n Quality: Slightly Worn \n Brand: Agolde \n Contact Number: xxxxxxxxxxxxx"),
              
-                 ActivitiesFamousPoints(id: 1, pointName: "Jimbaran", pointImage: "jimbaran", pointDescription: "Jimbaran Bay has a long beach with calm waters. It's lined with fish restaurants and backed by tropical forest. At its northern end, colorful boats are pulled up by the lively, open-air Kedonganan fish market. Southwest of the bay are Dreamland Beach and Balangan Beach, known for their strong surf waves.")
+            ActivitiesFamousPoints(id: 1, pointName: "Gap Shorts", pointImage: "SHORTS", pointDescription: "Short Size: M \n Quality: Slightly Worn \n Brand: Gap \n Contact Number: xxxxxxxxxxxxx"),
+            ActivitiesFamousPoints(id: 2, pointName: "Two Addidas Trousers", pointImage:"ADDIDAS", pointDescription:"Short Size: 14-15 and 15-16 \n Quality: Both slightly worn \n Brand: Addidas \n Contact Number: xxxxxxxxxxxxx")
+                
              ]),
              
-             ActivitiesPlaces(id: 2, activityPlace: "Cape Town", activityPlaceImage: "capetown", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Muizenberg", pointImage: "muizenberg", pointDescription: "Surfer’s Corner at Muizenberg is a popular learning spot, and is only about a 30-minute drive from the Cape Town city centre. The waves characteristic of this surf spot are gentle, and are ideal under a north-westerly wind direction."),
+             ActivitiesPlaces(id: 2, activityPlace: "Hats", activityPlaceImage: "hats", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Under Armour Hat", pointImage: "UAHAT", pointDescription: "Hat Size: 10-11 \n Quality: Very Worn \n Brand: Under Armour \n Contact Number: xxxxxxxxxxxxx"),
                  
-                  ActivitiesFamousPoints(id: 1, pointName: "Long Beach", pointImage: "longbeach", pointDescription: "Long Beach at Kommetjie is just that, a long, sandy beach that’s very popular with surfers. The wave breaks both to the left and the right, which gives ample opportunities for both natural (right-leg dominated surfer) and goofy footers")
+            ActivitiesFamousPoints(id: 1, pointName: "Beanie", pointImage: "BEANIE", pointDescription: "Hat Size: M \n Quality: Very Worn \n Brand: Unkown \n Quality: Slightly Worn \n Contact Number: xxxxxxxxxxxxx"),
+                 ActivitiesFamousPoints(id: 2, pointName: "Halloween Cowboy Hat", pointImage:"TEXAS", pointDescription: "Hat Size: S \n Brand: Unkown \n Quality: Nearly Brand New \n Contact Number: xxxxxxxxxxxxx")
              ])],
                       
             activityResources:
         
-            [ActivityResource(id: 0, resourceName: "Lifestyle", resourceDescription: "Explore, Fashion, Food, music, art, photography, travel and more!", resources:
-                [ActivityResourcesItem(id: 0, resourceName: "Yoga for Surfers", resourceImage: "yoga", resourceDescription: "Article"),
-                 ActivityResourcesItem(id: 1, resourceName: "Travel for a living", resourceImage: "travel", resourceDescription: "Article"),
-                 ActivityResourcesItem(id: 2, resourceName: "Tropical Green Smoothie", resourceImage: "smoothie", resourceDescription: "Tutorial")]),
+            [ActivityResource(id: 0, resourceName: "New Items", resourceDescription: "Items that have just been posted!", resources:
+                [ActivityResourcesItem(id: 0, resourceName: "Item 1", resourceImage: "NewItem1", resourceDescription: "Article"),
+                 ActivityResourcesItem(id: 1, resourceName: "Item 2", resourceImage: "NewItem2", resourceDescription: "Article"),
+                 ActivityResourcesItem(id: 2, resourceName: "Item 3", resourceImage: "NewItem3", resourceDescription: "Tutorial")]),
                 
-                ActivityResource(id: 1, resourceName: "Equipment", resourceDescription: "Find your dream gear", resources: [ActivityResourcesItem(id: 1, resourceName: "Boards", resourceImage: "surfboard-1", resourceDescription: ""),
-                     ActivityResourcesItem(id: 2, resourceName: "Boardshorts", resourceImage: "boardshorts", resourceDescription: ""),
-                     ActivityResourcesItem(id: 3, resourceName: "Surfboard Bags", resourceImage: "surfboardbags", resourceDescription: "")]),
+                ActivityResource(id: 1, resourceName: "Recomended", resourceDescription: "Find your dream items", resources: [ActivityResourcesItem(id: 1, resourceName: "Item 1", resourceImage: "NewItem1", resourceDescription: ""),
+                     ActivityResourcesItem(id: 2, resourceName: "Item 2", resourceImage: "NewItem2", resourceDescription: ""),
+                     ActivityResourcesItem(id: 3, resourceName: "Item 3", resourceImage: "NewItem3", resourceDescription: "")]),
                 
-                ActivityResource(id: 2, resourceName: "Training", resourceDescription: "Best surf training resources", resources: [ActivityResourcesItem(id: 1, resourceName: "Surf Core Training", resourceImage: "boardshorts", resourceDescription: "Video"),
-                     ActivityResourcesItem(id: 2, resourceName: "Sri Lanka Surf Camp", resourceImage: "srilankacamp", resourceDescription: "Camp"),
-                     ActivityResourcesItem(id: 3, resourceName: "Surf Photography Training", resourceImage: "surfphoto", resourceDescription: "Photography")])
+                
                 ]),
        
         ActivitiesData(id: 1, activitiesPlaces: [
         
-            ActivitiesPlaces(id: 1, activityPlace: "Snowbird", activityPlaceImage: "snowbird", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Snowbird", pointImage: "snowbird", pointDescription: "Just over the mountains to the north, Brighton and Solitude are located in Big Cottonwood Canyon. To the north of these ski and snowboard areas are Park City and Deer Valley, off of Interstate 80")]),
-            ActivitiesPlaces(id: 2, activityPlace: "Cervinia", activityPlaceImage: "italy", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Cervinia", pointImage: "italy", pointDescription: "Breuil-Cervinia is an Alpine resort in the Valle d’Aosta region of northwest Italy. It’s known for its snow-capped mountains, including the pyramid-shaped Matterhorn. A network of slopes connects Breuil-Cervinia to Swiss resorts like Zermatt,")]),
-            ActivitiesPlaces(id: 3, activityPlace: "Chamonix", activityPlaceImage: "chamonix", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Chamonix", pointImage: "chamonix", pointDescription: "Chamonix-Mont-Blanc (usually shortened to Chamonix) is a resort area near the junction of France, Switzerland and Italy. At the base of Mont Blanc, the highest summit in the Alps,")])],
+            ActivitiesPlaces(id: 1, activityPlace: "Toys", activityPlaceImage: "TOYS", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Marvel Lego Set", pointImage: "TOWER", pointDescription: "Description: \n 18+ Lego set. Mint Condition / Unopened. 5201 Pieces. Set 76269. \n Contact Number: xxxxxxxxx"),
+                ActivitiesFamousPoints(id: 1, pointName: "Pikachu Stuffed Toy", pointImage: "PIKA", pointDescription: "Description: \n Very big stuffed Pikachu. 68 cm tall, 40 cm wide. 5 Years Old. \n Contact Number: xxxxxxxxx"),
+                ActivitiesFamousPoints(id: 2, pointName: "Barbie Dream House", pointImage: "BARBIE", pointDescription: "Description: \n 2 year old Barbie Dream House. No figurines or pool included, just the house \n Contact Number: xxxxxxxxxx")
+            ]),
+            
+            ActivitiesPlaces(id: 2, activityPlace: "Gaming", activityPlaceImage: "GAMES", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Wii U", pointImage: "WII", pointDescription: "Description: \n 32GB Wii U console. 8 Years Old. No games included. \n Contact Number: xxxxxxxxxx"),
+                ActivitiesFamousPoints(id: 1, pointName: "Gaming Controller", pointImage: "PS5", pointDescription: "Description: \n Controller for playstation 5. Square Button and lights does not work, everything else does. \n Contact Number: xxxxxxxxxx"),
+                ActivitiesFamousPoints(id: 2, pointName: "Old Gaming Keyboard", pointImage: "Keyboard", pointDescription: "Description: \n Keyboard I found in the attic. About 7-9 years old. All the buttons work. \n Contact: xxxxxxxxxx")
+            ]),
+            
+            ActivitiesPlaces(id: 3, activityPlace: "Other", activityPlaceImage: "Black", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Warriors Series 5 books", pointImage: "MEOW", pointDescription: "Description: \n 6 books. The complete version of the 5 series of Warrios by Erin Hunter \n Contact: xxxxxxx"),
+                ActivitiesFamousPoints(id: 1, pointName: "Hasbro Classic Monopoly", pointImage: "MONO", pointDescription: "Description: \n Classic version of Monoply. 5 years old. \nContact Number: xxxxxxxxx"),
+                ActivitiesFamousPoints(id: 2, pointName: "Chess set", pointImage: "Chess", pointDescription: "Description: \n Old chess set made out of wood. High quality, 14 years old. White knight and Black rook is missing. \n Contact Number: xxxxxxxxx")]),
+            
+
+        
+        ],
                       
                       
             activityResources:
        
-           [ActivityResource(id: 0, resourceName: "Lifestyle", resourceDescription: "Explore, Fashion, Food, music, art, photography, travel and more!", resources:
-               [ActivityResourcesItem(id: 0, resourceName: "Peace in Mountains", resourceImage: "mountains", resourceDescription: "Article"),
-                ActivityResourcesItem(id: 1, resourceName: "Travel for a living", resourceImage: "travel", resourceDescription: "Article"),
-                ActivityResourcesItem(id: 2, resourceName: "Mountain top drinks", resourceImage: "drinks", resourceDescription: "Guide")]),
+           [ActivityResource(id: 0, resourceName: "New Items", resourceDescription: "New Items that have just been posted!", resources:
+               [ActivityResourcesItem(id: 0, resourceName: "Chess Set", resourceImage: "Chess", resourceDescription: "Article"),
+                ActivityResourcesItem(id: 1, resourceName: "Barbie Playhouse", resourceImage: "BARBIE", resourceDescription: "Article"),
+                ]),
                
-               ActivityResource(id: 1, resourceName: "Equipment", resourceDescription: "Find your dream gear", resources: [ActivityResourcesItem(id: 1, resourceName: "Boards", resourceImage: "snowboards", resourceDescription: ""),
-                    ActivityResourcesItem(id: 2, resourceName: "Goggles", resourceImage: "goggles", resourceDescription: ""),
-                    ActivityResourcesItem(id: 3, resourceName: "Snowboarding boots", resourceImage: "boots", resourceDescription: "")]),
+               ActivityResource(id: 1, resourceName: "Recommended", resourceDescription: "Recommended for you", resources: [ActivityResourcesItem(id: 1, resourceName: "Pikachu Doll", resourceImage: "PIKA", resourceDescription: ""),
+                    ActivityResourcesItem(id: 2, resourceName: "Barbie Playhouse", resourceImage: "BARBIE", resourceDescription: ""),
+                    ActivityResourcesItem(id: 3, resourceName: "Monopoly classic", resourceImage: "MONO", resourceDescription: "")]),
                
-               ActivityResource(id: 2, resourceName: "Training", resourceDescription: "Best Snowboarding training resources", resources: [ActivityResourcesItem(id: 1, resourceName: "Snowboard Training", resourceImage: "snowboarder", resourceDescription: "Video"),
-                    ActivityResourcesItem(id: 2, resourceName: "Snowboard Resorts Training", resourceImage: "frenchresort", resourceDescription: "Camp"),
-                    ActivityResourcesItem(id: 3, resourceName: "Snowboarding Photography", resourceImage: "snowboardphoto", resourceDescription: "Photography")])
                ]),
        
        
         ActivitiesData(id: 2, activitiesPlaces: [
         
-            ActivitiesPlaces(id: 1, activityPlace: "Torres del Paine", activityPlaceImage: "torresdelpaine", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "The Fauna Trail", pointImage: "faunatrail", pointDescription: "This trail is a great hiking option for beginner hikers or anyone looking for a quick day trip. While it may be short in distance, it doesn’t fall short on beautiful landscapes and neverending wildlife. On this somewhat secret trail, you’ll spot herds of guanacos grazing, condors flying through the sky, and if you’re lucky"),
+            ActivitiesPlaces(id: 1, activityPlace: "Books", activityPlaceImage: "BOOKS", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "5th Grade SAT book", pointImage: "SAT", pointDescription: "Description: Slightly Worn SAT book for 5th grade. Includes grammar, vocabulary and words. \n Contact Number:x"),
             
-                ActivitiesFamousPoints(id: 1, pointName: "Laguna Azul", pointImage: "lagunaazul", pointDescription: "aguna Azul, which literally translate to blue lagoon, is just that – a picturesque blue lake surrounded by massive mountains with jagged snow-covered peaks. Pictures don’t do it justice, making it one place you have to see to believe.")
+                ActivitiesFamousPoints(id: 1, pointName: "Notebook", pointImage: "notebooks", pointDescription: "Description: \n 4 notebooks. \n Contact: x"),
+                ActivitiesFamousPoints(id: 2, pointName: "Grade 12 Math Notebook", pointImage: "Math", pointDescription: "Description: \nMath notebook for grade 12 students. \nContact Number:x")
             ]),
             
-            ActivitiesPlaces(id: 2, activityPlace: "Peru", activityPlaceImage: "peru", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Inca Trail", pointImage: "inca", pointDescription: "One thing’s for sure: you absolutely cannot go to Peru without visiting Machu Picchu, one of the seven ancient Wonders of the World. The classic and most famous way to get there is via the Inca Trail, the trail that the original Incans traversed."),
+            ActivitiesPlaces(id: 2, activityPlace: "Stationary", activityPlaceImage: "STATIONARY", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Marker Set", pointImage: "MARKER", pointDescription: "Description: Marker Set. Yellow marker is missing. \n Contact Number: x"),
                 
-                ActivitiesFamousPoints(id: 1, pointName: "Santa Cruz Trek", pointImage: "santacruz", pointDescription: "The Santa Cruz trek in Peru’s Huascarán National Park in the Cordillera Blanca mountain range is considered by many experienced hikers to be one of the most beautiful in the world, seriously! The entire hike is framed by dramatic mountains, glaciers, and deeply blue lakes.")
+                ActivitiesFamousPoints(id: 1, pointName: "Notebook and pen", pointImage: "NOTEBOOK", pointDescription: "Description: Brand new notebook with a pen. \n Contact Number: x"),
+                ActivitiesFamousPoints(id: 2, pointName: "Fountain Pen", pointImage: "PEN", pointDescription: "Description: Slightly use fountain Pen. \n Contact Number: x")
             
             ]),
-            ActivitiesPlaces(id: 3, activityPlace: "Grand Canyon", activityPlaceImage: "grandcanyon", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "South Rim Trail", pointImage: "southrim", pointDescription: "For many visitors, the South Rim Trail is where they first lay eyes on the Grand Canyon. It's an experience not easily forgotten, and the viewpoints are plenty. With minimal elevation change and interpretive information along the way, this 13-mile paved route is lined with shuttle stops"),
+            ActivitiesPlaces(id: 3, activityPlace: "Other", activityPlaceImage: "black", famousPointsArray: [ActivitiesFamousPoints(id: 0, pointName: "Whiteboard", pointImage: "WHITEBOARD", pointDescription: "Description: Used whiteboard \n Contact Number: x"),
                   
-                ActivitiesFamousPoints(id: 1, pointName: "Bright Angel Trail", pointImage: "brightangel", pointDescription: "An iconic hiking trail of America, the Bright Angel Trail descends steeply from the South Rim of the Grand Canyon, revealing fantastic views that cannot be experienced from the rim. Descending over 4,000 feet in nine miles between the South Rim and the Colorado River.")
+                ActivitiesFamousPoints(id: 1, pointName: "Math block kits", pointImage: "blocks", pointDescription: "Description: Old Math block kit, with blocks representing 1, 10, 100 and 1000. One 100 block is missing. \n Conctact NUmber: x")
 
             ])],
                       
                       
             activityResources:
        
-           [ActivityResource(id: 0, resourceName: "Lifestyle", resourceDescription: "Explore, Fashion, Food, music, art, photography, travel and more!", resources:
-               [ActivityResourcesItem(id: 0, resourceName: "Clearing your thoughts", resourceImage: "hikingmental", resourceDescription: "Article"),
-                ActivityResourcesItem(id: 1, resourceName: "Hiking and physical benefits", resourceImage: "hiker", resourceDescription: "Article"),
+           [ActivityResource(id: 0, resourceName: "New Items", resourceDescription: "New Items that have just been posted", resources:
+               [ActivityResourcesItem(id: 0, resourceName: "5th Grade SAT book", resourceImage: "SAT", resourceDescription: "Article"),
+                ActivityResourcesItem(id: 1, resourceName: "Math block kits", resourceImage: "blocks", resourceDescription: "Article"),
                 ActivityResourcesItem(id: 2, resourceName: "Hikers Parties", resourceImage: "hikersparties", resourceDescription: "Fun")]),
                
-               ActivityResource(id: 1, resourceName: "Equipment", resourceDescription: "Find your dream gear", resources: [ActivityResourcesItem(id: 1, resourceName: "Footwear", resourceImage: "shoes", resourceDescription: ""),
-                    ActivityResourcesItem(id: 2, resourceName: "Camping Equipment", resourceImage: "camping", resourceDescription: ""),
-                    ActivityResourcesItem(id: 3, resourceName: "Hiking bags", resourceImage: "bags", resourceDescription: "")]),
-               
-               ActivityResource(id: 2, resourceName: "Photography", resourceDescription: "Best landscape photography resources", resources: [ActivityResourcesItem(id: 1, resourceName: "Camera equipment", resourceImage: "cameras", resourceDescription: "Video"),
-                    ActivityResourcesItem(id: 2, resourceName: "Long exposure photography", resourceImage: "longexposure", resourceDescription: "Tutorial"),
-                    ActivityResourcesItem(id: 3, resourceName: "Tips for best photography", resourceImage: "photography", resourceDescription: "Photography")])
+               ActivityResource(id: 1, resourceName: "Reccomended", resourceDescription: "Recomended for you", resources: [ActivityResourcesItem(id: 1, resourceName: "Whiteboard", resourceImage: "WHITEBOARD", resourceDescription: ""),
+                    ActivityResourcesItem(id: 2, resourceName: "Fountain pen", resourceImage: "PEN", resourceDescription: ""),
+                    ActivityResourcesItem(id: 3, resourceName: "Notebook and Pen", resourceImage: "NOTEBOOK", resourceDescription: "")]),
                ])
        
     ]

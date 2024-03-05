@@ -1,27 +1,19 @@
-//
-//  AccountView.swift
-//  SwiftUIStarterKitApp
-//
-//  Created by Osama Naeem on 08/08/2019.
-//  Copyright © 2019 NexThings. All rights reserved.
-//
-
 import SwiftUI
 
 struct AccountView: View {
     @State var notificationToggle: Bool = false
     @State var locationUsage: Bool = false
-    @State var username: String = "James"
-    @State var selectedCurrency: Int = 0
-    @State var currencyArray: [String] = ["$ US Dollar", "£ GBP", "€ Euro"]
-    
-    @State var selectedPaymentMethod: Int = 1
-    @State var paymentMethodArray: [String] = ["Paypal", "Credit/Debit Card", "Bitcoin"]
+    @State var email: String = ""
+    @State var phoneNumber: String = ""
+    @State var location: String = ""
+    @State var name: String = ""
+    @State var age: Int = 0
+    @State var username: String = ""
     
     var body: some View {
         GeometryReader { g in
             VStack {
-                Image("italy")
+                Image("eagle")
                     .resizable()
                     .frame(width: 100, height: 100)
                     .background(Color.yellow)
@@ -31,56 +23,41 @@ struct AccountView: View {
                     .font(.system(size: 20))
                     
                 Form {
-                    
-                    Section(header: Text("Payment Settings")) {
-                        Picker(selection: self.$selectedCurrency, label: Text("Currency")) {
-                                         ForEach(0 ..< self.currencyArray.count) {
-                                                  Text(self.currencyArray[$0]).tag($0)
-                                            }
-                        }
-                        
-                        Picker(selection: self.$selectedPaymentMethod, label: Text("Payment Method")) {
-                                  ForEach(0 ..< self.paymentMethodArray.count) {
-                                       Text(self.paymentMethodArray[$0]).tag($0)
-                                     }
-                        }
-                        Button(action: {
-                            print("Button tapped")
-                            
-                        }) {
-                            
-                            if (self.paymentMethodArray[self.selectedPaymentMethod]) == "Credit/Debit Card" {
-                                Text("Add a Credit/Debit Card to your account")
-                                
-                            } else {
-                                Text("Connect \(self.paymentMethodArray[self.selectedPaymentMethod]) to your account")
-                            }
-                        }
-
+                    Section(header: Text("Contact Information")) {
+                        TextField("Email", text: self.$email)
+                        TextField("Phone Number", text: self.$phoneNumber)
+                        TextField("Location", text: self.$location)
                     }
+                    
                     Section(header: Text("Personal Information")) {
-                       NavigationLink(destination: Text("Profile Info")) {
-                            Text("Profile Information")
-                        }
-                       
-                        NavigationLink(destination: Text("Billing Info")) {
-                            Text("Billing Information")
+                        TextField("Name", text: self.$name)
+                        Stepper("Age: \(self.age)", value: self.$age, in: 0...150)
+                        TextField("Username", text: self.$username)
+                        
+                        Button(action: {
+                            self.saveInformation()
+                        }) {
+                            Text("Save Information")
                         }
                     }
                     
                     Section(footer: Text("Allow push notifications to get latest travel and equipment deals")) {
                         Toggle(isOn: self.$locationUsage) {
-                              Text("Location Usage")
+                            Text("Location Usage")
                         }
                         Toggle(isOn: self.$notificationToggle) {
                             Text("Notifications")
                         }
                     }
                         
-            }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
-            .navigationBarTitle("Settings")
-         }
+                }.background(Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255))
+                .navigationBarTitle("Settings")
+            }
         }
     }
- }
-
+    
+    func saveInformation() {
+        // Add code to save the user information
+        print("User information saved")
+    }
+}

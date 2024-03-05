@@ -16,32 +16,38 @@ struct TabbarView: View {
             }
             .tag(0)
             .tabItem {
-                Image(systemName: "house")
+                Image("activity-1")
                     .resizable()
-                Text("Home")
+                Text("Activities")
             }
             
-
             NavigationView {
-                ActivitiesCartView(ShoppingCartItemsData: ActivitiesCart(data: ActivitiesMockStore.shoppingCartData))
+                SearchView()
             }
             .tag(1)
             .tabItem {
-                Image(systemName:"bag")
-                Text("Items")
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                Text("Search")
+            }
+            
+            NavigationView {
+                ItemsList()
+            }
+            .tag(2)
+            .tabItem {
+                Image("shopping-cart-icon")
+                Text("Cart")
             }
             
             NavigationView {
                      AccountView()
                   }
-                   .tag(2)
+                   .tag(3)
                     .tabItem {
-                        Image(systemName:"person")
-                    Text("Profile")
+                    Image("profile-glyph-icon")
+                    Text("Account")
                 }
         }
     }
 }
-
-
-

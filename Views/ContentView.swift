@@ -17,7 +17,6 @@ class UserSettings: ObservableObject {
 
 struct StartView: View {
     @EnvironmentObject var settings: UserSettings
-    
     var body: some View {
         if settings.loggedIn {
             return AnyView(TabbarView())
@@ -93,7 +92,6 @@ struct OnboardingView: View {
                     .frame(width: geometry.size.width, height: 50, alignment: .center)
                     .multilineTextAlignment(.center)
                 
-//                Spacer(minLength: 20)
                 Spacer()
                 if self.onboardingData.showButton ?? false {
                     VStack {

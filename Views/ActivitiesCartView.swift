@@ -112,9 +112,10 @@ struct ShoppingFinalInfoView: View {
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.top, 10)
                 .padding(.trailing, 10)
-                .sheet(isPresented: $isShowingNewWindow) {
-                    // Content of the new window goes here
-                    NewWindowView()
+                .sheet(isPresented: self.$isShowingNewWindow) {
+                    AddItemView(dismissAction: {
+                        self.isShowingNewWindow = false // Dismiss the sheet when the closure is called
+                    })
                 }
 
                 HStack {
